@@ -1,0 +1,24 @@
+{
+  "name": "reaxtor-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prebuild": "mkdir -p dist",
+    "build": "./node_modules/.bin/browserify src/index.js -t babelify --outfile dist/index.js",
+    "dev": "./node_modules/.bin/beefy src/index.js:dist/index.js 3333 -- -t babelify"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "falcor-json-graph": "^1.1.7",
+    "falcor-router": "git+ssh://git@github.com/netflix/falcor-router.git"
+  },
+  "devDependencies": {
+    "babel": "5.6.x",
+    "babelify": "6.1.x",
+    "beefy": "^2.1.5",
+    "browserify": "11.0.1"
+  }
+}

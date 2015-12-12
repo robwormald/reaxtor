@@ -1,0 +1,33 @@
+{
+  "name": "reaxtor",
+  "version": "0.0.1",
+  "description": "Falcor + Rx + virtual-dom",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "node test/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trxcllnt/reaxtor.git"
+  },
+  "keywords": [
+    "Falcor",
+    "Reactive",
+    "Extensions",
+    "virtual-dom",
+    "rx",
+    "rxjs"
+  ],
+  "author": "Paul Taylor <paul.e.taylor@me.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/trxcllnt/reaxtor/issues"
+  },
+  "homepage": "https://github.com/trxcllnt/reaxtor#readme",
+  "dependencies": {
+    "dom-delegator": "^13.1.0",
+    "falcor": "git+ssh://git@github.com/netflix/falcor.git",
+    "rxjs": "^5.0.0-alpha.14",
+    "virtual-dom": "^2.1.1"
+  }
+}
